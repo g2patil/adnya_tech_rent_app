@@ -56,8 +56,9 @@ public class cust_master_controller {
 	        for (cust_master other : cust_master) {
 	            if (other.equals(Cust_master)) {
 	            	Cust_master.setLoggedIn(true);
-	            //	cmr.(Cust_master);
+	            	//cmr.(Cust_master);
 	            	//cust_master.saveAll(Cust_master);
+	            	//adnya
 	                return Status.SUCCESS;
 	            }
 	        }
