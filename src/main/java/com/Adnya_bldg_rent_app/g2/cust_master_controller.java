@@ -60,7 +60,7 @@ public class cust_master_controller {
 	            	//cust_master.saveAll(Cust_master);
 	            	//adnya
 	                return Status.SUCCESS;
-	            }
+	            }		
 	        }
 
 	        return Status.FAILURE;

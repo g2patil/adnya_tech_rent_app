@@ -3,6 +3,7 @@ package com.Adnya_bldg_rent_app.g2;
 import java.util.Objects;
 
 import org.antlr.v4.runtime.misc.NotNull;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -100,7 +101,9 @@ public class cust_master {
 		return password;
 	}
 	public void setPassword(String password) {
-		this.password = password;
+		
+		this.password =password ;
+		//BCrypt.hashpw(password, BCrypt.gensalt());
 	}
 	
 	
