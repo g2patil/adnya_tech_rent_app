@@ -3,8 +3,6 @@ package com.Adnya_bldg_rent_app.g2;
 import java.util.Objects;
 
 import org.antlr.v4.runtime.misc.NotNull;
-import org.springframework.security.crypto.bcrypt.BCrypt;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -102,9 +100,16 @@ public class cust_master {
 	}
 	public void setPassword(String password) {
 		
+
 		this.password =password ;
 		//BCrypt.hashpw(password, BCrypt.gensalt());
 	}
+	
+	
+	
+	
+	
+	
 	
 	
 	 @Override
@@ -112,7 +117,11 @@ public class cust_master {
 	        if (this == o) return true;
 	        if (!(o instanceof cust_master)) return false;
 	        cust_master cust_master = (cust_master) o;
+	        // System.out.println("pwd = "+password);
+	      //  System.out.println("pwd1 = "+cust_master.password);
 	        return Objects.equals(cust_mob, cust_master.cust_mob) &&
+	        		
+	       
 	                Objects.equals(password, cust_master.password);
 	    }
     
